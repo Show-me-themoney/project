@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function sayScript() {
+            // 错误，会被认为代码到此结束
+            // alert("</script>");
+    // 正确写法
+    alert("\/script")
+    }
+    sayScript()
+    </script> -->
+    <!-- <script>
+        var message;
+        age = 1
+        console.log(message);
+        console.log(typeof age);
+    </script> -->
+
+    <script>
+        // console.log(0.1 + 0.2);
+
+
+
+        // 忽略符串前面的空格，直至找到第一个非空格字符。如果第一个字符不是数字字符或者负号，parseInt ()就会返回NaN;也就是说，用parseInt()转换空字符串会返回NaN ( Number( )对空字符返回0)。
+        var str = 'a123'
+        console.log(parseInt(str));
+        console.log(parseInt('123xcv325'));
+        // 如果字符串以"0"开头且后跟数字字符，则会将其当作一个八进制数来解析。(结果不符合)
+        console.log(parseInt('070', 8));
+        console.log(parseInt('0xf'));
+        console.log(parseInt("03"));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
