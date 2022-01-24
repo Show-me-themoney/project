@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // isFinite()函数
+        //这个函数的参数位于最小与最大值之间时返回true
+        console.log(isFinite(Number.MAX_VALUE + 1))     //true
+        console.log(isFinite(Number.MAX_VALUE + Number.MAX_VALUE))     //false
+
+        // NaN 不与任何数相同，包括本身
+        // 任何值除以0都等于NaN
+        var num1 = 3 / 0;
+        console.log(num1)   //Infinity(与结论不同)
+
+        // isNaN()函数
+        // 这个函数用来判断参数是否能转换为数值,不能true，能false
+        console.log(isNaN('chenge'))    //true
+        console.log(isNaN('10'))    //false
+    </script>
+</body>
+
+</html>
